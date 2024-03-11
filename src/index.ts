@@ -1,9 +1,6 @@
-import exppress from "express";
-import userRouter from "./routes/users";
+import { createApp } from "./createApp";
 
-const app = exppress();
-
-app.use("/api/users", userRouter);
+const app = createApp();
 
 const PORT = 3000;
 
